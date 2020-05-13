@@ -1,10 +1,17 @@
 import React from 'react'
-import 'Footer.sass'
+import './Footer.sass'
 
 const Footer = () => {
     return (
-        <div>
-            
+        <div className='footer'>
+            <div className='navigationDivs previousDiv'>
+                <div className="arrow-left"></div>
+                <span>Previous</span>
+            </div>
+            <div className='navigationDivs nextDiv'>
+                <span>Next</span>
+                <div className="arrow-right"></div>
+            </div>
         </div>
     )
 }
