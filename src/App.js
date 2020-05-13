@@ -9,16 +9,17 @@ const App = () => {
   const [numOfPages, setNumOfPages] = useState('')
   const [actualPage, setActualPage] = useState('')
 
+  // Consult the API 
   useEffect(() => {
     getColors()
-    console.log('in useEffect',colors)
-
   }, [])
 
+  // Function to get the data from the API and save it
   const getColors = () => {
     fetch('https://reqres.in/api/colors?page=1')
       .then(res => res.json())
       .then(colors => {
+        console.log(colors.data)
         setColors(colors.data)
         setNumOfPages(colors.total_pages)
         setActualPage(colors.page)
@@ -34,6 +35,7 @@ const App = () => {
         colors.map( color => {
           return (
             <Cards 
+              key={color.pantone_value}
               year= {color.year}
               hex= {color.color}
               colorName= {color.name}
