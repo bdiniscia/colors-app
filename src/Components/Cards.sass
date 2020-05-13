@@ -3,3 +3,40 @@
 .card 
     width: 33.33%
     height: 50%
+    font-family: $font-regular
+    display: flex
+    align-items: center
+
+.textCard
+    padding: 1em
+    height: 80%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    p
+        margin: 0
+        color: $baby-powder
+        font-weight: 700
+        text-shadow: 0.3px 0.5px 4px $blue-navy
+
+.middleText
+    display: flex
+    flex-direction: column
+    font-size: 20px
+    align-self: center
+    text-align: center
+
+.pantone 
+    display: flex
+    align-self: flex-end
+
+@media screen and ( max-width: 500px )
+    .year , .pantone
+        font-size: 12px
+
+    .middleText
+        font-size: 14px
+
+    .textCard
+        padding: 0.2em
