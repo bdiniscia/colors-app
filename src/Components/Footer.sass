@@ -5,20 +5,31 @@
     justify-content: space-between
     font-family: $font-regular
 
-.navigationDivs
+.navigationButtons
     display: flex
     flex-direction: row
     margin: 1em
     align-items: center
     font-weight: 700
     cursor: pointer
+    border: none
+    font-size: 15px
+    color: $blue-navy
+    background-color: $baby-powder
+    &:disabled
+        color: $medium-grey
+        cursor: not-allowed
+        .arrow-left
+            border-right: 10px solid $medium-grey
+        .arrow-right 
+            border-left: 10px solid $medium-grey
 
 .arrow-left 
     width: 0
     height: 0
     border-top: 10px solid transparent
     border-bottom: 10px solid transparent
-    border-right: 10px solid $medium-grey
+    border-right: 10px solid $blue-navy
     margin-right: 0.5em
 
 .arrow-right 
@@ -29,12 +40,5 @@
     border-left: 10px solid $blue-navy
     margin-left: 0.5em
 
-.previousDiv
-    color: $medium-grey
-
-.nextDiv
-    color: $blue-navy
-    &:hover
-        color: #19456a
 
 
