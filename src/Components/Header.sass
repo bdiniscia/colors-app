@@ -5,20 +5,39 @@
     flex-direction: row
     align-items: flex-end
     justify-content: center
-    padding: 0.8em 0 1.2em 0
+    padding: 0.8em 1em 1.2em 1em
     border-bottom: 1.5px solid $light-grey
 
 .logo
-    width: 200px
+    width: 13em
+    display: flex
 
 .slash 
     font-size: 45px
     color: $light-grey
     margin: 0 0.5em
+    display: flex
 
 .textHeader
+    display: flex
     font-family: $font-regular
     color: $medium-grey
     font-size: 30px
     margin: 0
 
+@media screen and ( max-width: 500px )
+    .slash
+        font-size: 40px
+
+    .textHeader
+        font-size: 16px
+
+    .logo
+        width: 10em
+    
+@media screen and ( max-width: 320px )
+    .textHeader
+        font-size: 14px
+
+    .header 
+        padding: 0.4em 0.5em 0.8em 0.5em

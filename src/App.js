@@ -16,7 +16,7 @@ const App = () => {
   }, [])
 
   const getColors = () => {
-    fetch('https://reqres.in/api/colors?page=2')
+    fetch('https://reqres.in/api/colors?page=1')
       .then(res => res.json())
       .then(colors => {
         setColors(colors.data)
