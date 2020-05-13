@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.sass';
 import Header from './Components/Header'
 import Cards from './Components/Cards';
+import Footer from './Components/Footer';
 
 const App = () => {
 
@@ -11,12 +12,12 @@ const App = () => {
 
   // Consult the API 
   useEffect(() => {
-    getColors()
+    getColors(1)
   }, [])
 
   // Function to get the data from the API and save it
-  const getColors = () => {
-    fetch('https://reqres.in/api/colors?page=1')
+  const getColors = (page) => {
+    fetch(`https://reqres.in/api/colors?page=${page}`)
       .then(res => res.json())
       .then(colors => {
         console.log(colors.data)
@@ -44,6 +45,7 @@ const App = () => {
           )}
         )}
       </section>
+      <Footer />
     </div>
   );
 }
