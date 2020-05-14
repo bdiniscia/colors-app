@@ -32,6 +32,15 @@ Para desarrollar la aplicación se utilizó:
 Aquí se puede observar el diseño final y la app en funcionamiento: 
 ![Demo](./src/img/demo.gif)
 
+## Cómo correr la aplicación
+Para correr la app tienes que:
+1. Descargar el zip.
+2. Descomprimirlo.
+3. Entrar en la cónsola y ubicarte en la carpeta del proyecto.
+2. Correr `npm install .`
+3. Correr `npm run start`
+
+
 ## Link de Deploy
 
-Puedes entrar al deploy en el siguiente link
+También puedes entrar al deploy en el siguiente [link](https://red-fox-media-our-colors.netlify.app/)
