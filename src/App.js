@@ -7,7 +7,6 @@ import Cards from './Components/Cards';
 import Footer from './Components/Footer';
 
 const App = () => {
-
   const apiUrl = 'https://reqres.in/api/colors';
   const [colors, setColors] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -75,7 +74,12 @@ const App = () => {
           )}
         )}
       </section>
-      <Footer disabledPrev={disabledPrev} disabledNext={disabledNext} nextColors={nextColors} prevColors={prevColors}/>
+      <Footer
+        disabledPrev={disabledPrev}
+        disabledNext={disabledNext}
+        nextColors={nextColors}
+        prevColors={prevColors}
+      />
     </div>
   );
 }
