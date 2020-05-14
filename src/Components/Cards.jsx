@@ -16,7 +16,9 @@ const Cards = ({year, hex, colorName, pantone}) => {
             <div style={{backgroundColor: hex}} className='card'>
                 <div className='textCard'>
                     <p className='year'>{year}</p>
-                    {copied ? <p className='middleText copied'>Copied!</p> : <div className='middleText'><p>{colorName}</p><p>{hex}</p></div>}
+                    {copied ? 
+                    <p className='middleText copied'>Copied!</p> : 
+                    <div className='middleText'><p>{colorName}</p><p>{hex}</p></div>}
                     <p className='pantone'>{pantone}</p>  
                 </div>
             </div>

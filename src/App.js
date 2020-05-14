@@ -10,7 +10,7 @@ const App = () => {
   const apiUrl = 'https://reqres.in/api/colors';
   const [colors, setColors] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [numOfPages, setNumOfPages] = useState('');
+  const [numOfPages, setNumOfPages] = useState(0);
   const [actualPage, setActualPage] = useState(0);
 
   // Consult the API 
