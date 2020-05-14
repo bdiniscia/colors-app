@@ -17,6 +17,7 @@ Esta será de gran ayuda para estandarizar los trabajos y esfuerzos de nuestros 
     - Logo:
     ![Logo](./src/img/logo.png)
 
+
 2. Luego se procedió a diseñar el prototipo en Photoshop: 
 
 ![Prototipo](./src/img/prototype.png)
@@ -47,3 +48,10 @@ Para correr la app tienes que:
 ## Link de Deploy 🚀
 
 También puedes entrar al deploy en el siguiente [link](https://red-fox-media-our-colors.netlify.app/)
+
+## Link de Github 🐱🐙
+
+Link al repositorio público en [Github](https://github.com/bdiniscia/colors-app)
+
+
+> Creado y mantenido por Bárbara Di Niscia. (@bdiniscia)
